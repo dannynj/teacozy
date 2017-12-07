@@ -1,5 +1,50 @@
-/* Test */
-h1 {
-  font-family: Impact;
-  font-size: 90px;
+/* Universal styles */
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+h2, h4, h5 {
+  font-family: Helvetica, sans-serif;
+  color: seashell;
+  opacity: 0.9;
+}
+
+/* Header */
+header {
+  display: flex;
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  text-decoration: underline;
+}
+
+nav {
+  justify-content: flex-end;
+}
+
+nav a:link {
+  color: seashell;
+}
+
+nav a:visited {
+  color: seashell;
+}
+
+nav span{
+  padding-right: 10px;
+  padding-left: 10px;
+  display: inline-block;
+  /* justify-content: flex-end; */
+}
+
+.logo img {
+  justify-content: flex-start;
+  height: 50px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
