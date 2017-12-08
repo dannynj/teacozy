@@ -13,6 +13,12 @@ h2, h4, h5 {
   opacity: 0.9;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Header */
 header {
   display: flex;
@@ -20,11 +26,15 @@ header {
   height: 69px;
   width: 100%;
   border-bottom: 1px solid seashell;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 nav {
-  justify-content: flex-end;
+  text-align: right;
+  flex-grow: 1;
+  margin-top: 15px;
+  margin-right: 10px;
+  /* justify-content: flex-end; */
 }
 
 nav a:link {
