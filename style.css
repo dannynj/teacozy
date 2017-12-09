@@ -1,10 +1,12 @@
 /* Universal styles */
 body {
+  margin: 0;
   font-family: Helvetica, sans-serif;
   font-size: 22px;
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  text-align: center;
 }
 
 h2, h3, h4, h5 {
@@ -27,15 +29,14 @@ header {
   width: 100%;
   border-bottom: 1px solid seashell;
   z-index: 5;
-  /* text-decoration: underline; */
+  background-color: black;
 }
 
 nav {
   text-align: right;
   flex-grow: 1;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-right: 10px;
-  /* justify-content: flex-end; */
 }
 
 nav a:link {
@@ -50,15 +51,37 @@ nav span{
   padding-right: 10px;
   padding-left: 10px;
   display: inline-block;
-  /* justify-content: flex-end; */
 }
 
 .logo img {
   justify-content: flex-start;
   height: 50px;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
+
+/* main div styles */
+.main {
+  display: flex;
+}
+
+#mission {
+  display: flex;
+  height: 700px;
+  width: 1200px;
+  background-image: url(resources/img-mission-background.jpg);
+  padding-top: 70px; /* padding doesn't seem to be working */
+  justify-content: center;
+}
+
+#mission .headline {
+  background-color: black;
+  width: 1200px;
+  height: 140px;
+}
+
+
+
 
 /* contact */
 .contact {
