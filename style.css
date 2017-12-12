@@ -21,6 +21,7 @@ h2, h3, h4, h5 {
   flex-wrap: wrap;
 }
 
+
 /* Header */
 header {
   display: flex;
@@ -60,29 +61,58 @@ nav span{
   margin-top: 10px;
 }
 
+
 /* main div styles */
 .main {
   display: flex;
+  flex-direction: column;
+
 }
 
 #mission {
-  display: flex;
   height: 700px;
   width: 1200px;
   background-image: url(resources/img-mission-background.jpg);
   padding-top: 70px; /* padding doesn't seem to be working */
+  align-items: center;
+  /* justify-content: center; */
+
+}
+
+.headline {
+  background-color: black;
+  width: 1200px;
+  height: 120px;
+  /* margin-top: 250px; */
+}
+
+#mission .headline h2 {
+  margin-top: 10px;
+}
+
+
+/* tea of the month div */
+.tea {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tea-headline {
+  margin-top: 10px;
   justify-content: center;
 }
 
-#mission .headline {
-  background-color: black;
-  width: 1200px;
-  height: 140px;
+.tea-image {
+  width: 300px;
+  height: 200px;
+
 }
 
-
-
-
+.items {
+  display: flex;
+}
 /* contact */
 .contact {
   text-align: center;
